@@ -1,0 +1,54 @@
+.nav {
+  position: relative;
+}
+
+.nav::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  transition: all 0.3s ease;
+}
+
+.nav:hover:after {
+  width: 100%;
+}
+
+.header nav:nth-child(2):after {
+  transition: none;
+}
+
+.banner .animate-text span {
+  display: none;
+}
+
+.banner .animate-text span.text-in {
+  display: inline-block;
+  animation: textIn 1s ease;
+}
+
+.banner .animate-text span.text-out {
+  display: inline-block;
+  animation: textOut 1s ease;
+}
+
+@keyframes textIn {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes textOut {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}

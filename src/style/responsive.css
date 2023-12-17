@@ -1,0 +1,85 @@
+.cms-package {
+  width: 100%;
+}
+
+.cms-package .packages {
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: scroll;
+  justify-content: flex-start;
+}
+
+.work-flow::after {
+  content: "";
+  z-index: 0;
+  width: 3px;
+  height: 100%;
+  border: dashed 2px black;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+}
+
+.work-flow .left {
+  left: 0px;
+  display: flex;
+  width: 50%;
+}
+
+.work-flow .right {
+  left: 50%;
+  display: flex;
+  width: 50%;
+}
+
+@media (max-width: 920px) {
+  .header .right .links {
+    display: none;
+  }
+  .header .right .menu-icon {
+    display: inline-block;
+  }
+  .banner h1,
+  .banner span,
+  .banner .animate-text {
+    font-size: 3rem;
+  }
+  .banner .small-text {
+    width: 50%;
+  }
+  .packages .name {
+    font-size: 1rem;
+  }
+  .work-flow::after {
+    left: 2px;
+  }
+  .work-flow .left,
+  .work-flow .right {
+    left: 2px;
+    width: 100%;
+  }
+  .work-flow .black-ball {
+    left: -48px;
+  }
+}
+
+@media (max-width: 960px) {
+  .who-we-work div {
+    width: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner .small-text {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  .banner h1,
+  .banner span,
+  .banner .animate-text {
+    font-size: 2.55rem;
+  }
+}
